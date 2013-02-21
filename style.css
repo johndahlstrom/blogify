@@ -1,0 +1,374 @@
+/*
+ * Theme Name:     Blogify
+ * Theme URI:      http://johndahlstrom.se
+ * Description:    A simple, beautiful, responsive and fast theme for your blog.
+ * Author:         John Dahlstr&ouml;m
+ * Author URI:     http://johndahlstrom.se
+ * Template:       blogify
+ * Version:        0.1
+ * License: GNU General Public License v3 or later
+ * License URI: http://www.gnu.org/licenses/gpl.html
+ * */
+
+
+/* Resets */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  margin-top: 0px !important;
+}
+
+body {
+  font: 1em normal 'Open Sans', Helvetica, Arial, sans-serif;
+  color: #666;
+  background: #E6E7EB;
+}
+
+h1 {
+  font-size: 1.5em;
+  font-weight: normal;
+  color: #444;
+}
+
+
+h2 {
+  font-size: 1.5em;
+  font-weight: normal;
+  color: #444;
+  margin: 10 0 10 0;
+}
+
+p {
+  padding: 10px 0;
+}
+
+pre {
+  overflow: auto;
+}
+
+a, a:visited {
+  color: #118CD1;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  color: #118CD1;
+  text-decoration: underline;
+}
+
+#wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+#header {
+  width: 100%;
+}
+
+#header img {
+  width: 100%;
+}
+
+#page {
+  background: #fff;
+}
+
+#content-wrapper {
+  width: 100%;
+}
+
+#content {
+  width: 100%;
+  float: left;
+}
+
+#post {
+  float: left;
+  width: 75%;
+}
+
+#entry-wrapper {
+  width: 100%;
+  float: left;
+  background: #fff;
+  box-shadow: 0px 0px 10px #ccc;
+  margin: 0 0 2em 0;
+}
+
+.entry {
+  border: 1px solid #ccc;
+}
+
+#sidebar {
+  width: 25%;
+  float: right;
+  font-size: 0.85em;
+  color: #555;
+  margin: 0 0 2em 0;
+}
+
+.widget_text {
+  padding: 0 20px 20px 20px;
+  float: left;
+  list-style: none;
+  text-shadow: 1px 1px #fff;
+}
+
+#sidebar img {
+  max-width: 100%;
+}
+
+.widgettitle {
+  font-size: 1.8em;
+  margin: 0;
+}
+
+small {
+  font-size: 0.75em;
+  padding: 0 0 0 20px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+blockquote {
+  border-radius: 7px;
+  border: 1px solid #ccc;
+  background: #f2f2f2;
+  padding: 15px;
+  margin: 10px 0;
+}
+
+blockquote p {
+  padding: 0 !important;
+}
+
+.entry-title {
+  padding: 20px 20px;
+  color: #fff;
+  background: #13A7EC; 
+  margin: 0 0 10px 0;
+}
+
+.entry-title a {
+  color: #fff;
+}
+
+.entry-title a:hover {
+  text-decoration: none !important;
+  color: #fff;
+}
+
+.entry-content {
+  padding: 40 20 20 20;
+}
+
+.entry-content img {
+  max-width: 100%;
+}
+
+.entry-meta {
+  background: #efefef;
+  margin: 20px 0 0 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.entry-meta-date {
+  font-weight: bold;
+  font-size: 0.75em;
+  padding: 0 0 0 20px;
+  text-transform: uppercase;
+  float: left;
+}
+
+.entry-meta-category {
+  font-size: 0.8em;
+}
+
+.entry-meta-comments {
+  font-weight: bold;
+  font-size: 0.75em;
+  float: right;
+  margin: 0 20px 0 0;
+  text-transform: uppercase;
+}
+
+.entry-meta-next-previous {
+  margin: 0 0 2em 0;
+  width: 100%;
+  float: left;
+  box-shadow: 0px 0px 10px #ccc;
+  height: 40px;
+  background: #FFF;
+  border: 1px solid #ccc;
+}
+
+.meta {
+  background: #FFF;
+  padding: 10px;
+}
+
+#meta-wrapper {
+  margin: 0 0 2em 0;
+  width: 100%;
+  float: left;
+  box-shadow: 0px 0px 10px #ccc;
+  height: 40px;
+  background: #FFF;
+  border: 1px solid #ccc;
+}
+
+.align-left {
+  float: left;
+  text-align: left;
+}
+
+.align-right {
+  float: right;
+  text-align: right;
+}
+
+#respond {
+  margin: 10px;
+}
+
+.comments ol, .comments li {
+  list-style: none;
+  padding: 10px;
+}
+
+.comments {
+  width: 100%;
+  background: #fff;
+  float: left;
+  padding: 0;
+  margin: 10px 0 2em 0;
+  box-shadow: 0px 0px 10px #ccc;
+}
+
+.comments-list {
+  padding: 10px;
+}
+
+.comments h3 {
+  padding: 10px;
+}
+
+.comment-body {
+  margin: 0 0 10px 0;
+}
+
+.comment-body {
+  padding: 10px;
+  overflow: auto;
+}
+
+.comment-meta {
+  font-size: 0.8em;
+  margin: 5px 0;
+}
+
+.reply {
+  padding: 10px;
+  text-align: right;
+}
+
+.children {
+  background: #efefef;
+  padding: 0 0 0 10px;
+}
+
+form, input {
+  padding: 10px;
+}
+
+textarea {
+  color: inherit;
+  font: inherit;
+  width: 100%;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+input {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+iframe {
+  max-width: 100%;
+}
+
+.page-numbers {
+  background: #f2f2f2;
+  border: 1px solid #ddd;
+  padding: 1px 7px;
+}
+
+.page-numbers.current, .page-numbers:hover {
+  background: #13a7ec;
+  border: 1px solid #1088c0;
+  padding: 1px 7px;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.page-numbers.dots, .page-numbers.dots:hover {
+  background: #fff;
+  border: 0;
+  padding: 1px 7px;
+  color: #666;
+}
+
+.spacer {
+  height: 50px;
+}
+
+
+/* Responsive */
+@media all and (max-device-width: 599px) {
+
+  #content {
+    margin: 0;
+  }
+
+  #post {
+    width: 100%;
+  }
+
+  #sidebar {
+    width: 100%;
+    float: none;
+    background: #efefef;
+    margin: 0 0 2em 0;
+    border-left: 0 !important;
+    border-right: 0 !important;
+    padding: 10px 0 0 0;
+  }
+
+  .entry {
+    border-left: 0 !important;
+    border-right: 0 !important;
+  }
+
+  .comments {
+    width: 100%;
+  }
+
+  #meta-wrapper {
+    width: 100%;
+    border-left: 0 !important;
+    border-right: 0 !important;
+  }
+
+  .meta {
+    float: left;
+  }
+}
