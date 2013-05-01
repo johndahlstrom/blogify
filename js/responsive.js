@@ -2,7 +2,7 @@
 var responsiveDesign = function() {
   'use strict';
   var width = $(window).width();
-  if (width < 600) {
+  if (width < 650) {
     $('#content').css({'margin': '0'});
     $('#sidebar').css({'width': '100%', 'float': 'left', 'box-shadow': '0px 0px 10px #ccc', 'padding': '10px 0 0 0', 'background': '#FFF', 'border-top': '1px solid #ccc', 'border-bottom': '1px solid #ccc'});
     $('.entry*').css({'border-left': '0 !important', 'border-right': '0 !important'});

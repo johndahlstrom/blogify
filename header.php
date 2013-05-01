@@ -2,7 +2,6 @@
 <html lang="sv">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta http-equiv="Cache-Control" content="max-age=2592000" />
     <link rel="alternate" href="http://johndahlstrom.se/blog/feed" title="<?=bloginfo('name');?>" type="application/atom+xml" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
     <?php wp_head(); ?>
@@ -30,8 +29,24 @@
     <?php
     }
     ?>
+    <meta property="og:type" content="blog" />
+    <meta property="og:url" content="<?php echo $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]; ?>" />
     <meta property="og:image" content="http://johndahlstrom.se/blog/wp-content/uploads/2013/01/profil.jpg" />
     <meta name="keywords" content="john dahlström, frilans, webbprogrammerare, responsive design, arch linux, archlinux, linux arch, mobile first, vim, vim a, vim i, blogg hur man gör" />
     <meta name='author' content='John Dahlström' />
 
+    <style type="text/css" media="all">
+      body {
+        color: <?php echo get_option('text') ?>;
+      }
+      a { 
+        color: <?php echo get_option('links') ?>;
+      }
+      a:hover {
+        color: <?php echo get_option('links') ?>;
+      }
+      .entry-title { 
+        background: <?php echo get_option('titles') ?>;
+      }
+    </style>
   </head>

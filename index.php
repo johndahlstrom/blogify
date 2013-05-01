@@ -1,18 +1,4 @@
 <?php include('header.php'); ?>
-<style type="text/css" media="all">
-  body {
-    color: <?php echo get_option('text') ?>;
-  }
-  a { 
-    color: <?php echo get_option('links') ?>;
-  }
-  a:hover {
-    color: <?php echo get_option('links') ?>;
-  }
-  .entry-title { 
-    background: <?php echo get_option('titles') ?>;
-  }
-</style>
 <body>
   <div id='wrapper'>
     <?php if (is_admin_bar_showing()) { ?>
