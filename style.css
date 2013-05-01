@@ -5,7 +5,7 @@
  * Author:         John Dahlstr&ouml;m
  * Author URI:     http://johndahlstrom.se
  * Template:       Blogify
- * Version:        0.1
+ * Version:        0.2
  * License: GNU General Public License v3 or later
  * License URI: http://www.gnu.org/licenses/gpl.html
  * */
@@ -64,6 +64,23 @@ a:hover, a:focus {
   margin: 0 auto;
 }
 
+#site-title {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 25px 15px 25px;
+  box-shadow: 0px 1px #FFF;
+}
+
+#home-button {
+  text-shadow: 1px 1px #FFF;
+  color: #666;
+  font-size: 2.5em;
+}
+
+#home-button:hover {
+  text-decoration: none;
+  text-shadow: 0px 0px 1px #ccc;
+}
+
 #header {
   width: 100%;
 }
@@ -83,6 +100,7 @@ a:hover, a:focus {
 #content {
   width: 100%;
   float: left;
+  margin: 2em 0 0 0;
 }
 
 #post {
@@ -90,7 +108,7 @@ a:hover, a:focus {
   width: 75%;
 }
 
-#entry-wrapper {
+.entry-wrapper {
   width: 100%;
   float: left;
   background: #fff;
@@ -106,7 +124,7 @@ a:hover, a:focus {
   width: 25%;
   float: right;
   font-size: 0.85em;
-  color: #555;
+  color: #444;
   margin: 0 0 2em 0;
 }
 
@@ -162,7 +180,7 @@ blockquote p {
 }
 
 .entry-content {
-  padding: 40 20 20 20;
+  padding: 40px 20px 20px 20px;
 }
 
 .entry-content img {
@@ -292,7 +310,7 @@ textarea {
   width: 100%;
   border: 2px solid #ccc;
   border-radius: 5px;
-  padding: 10px;
+  padding: 5px;
 }
 
 input {
@@ -328,7 +346,7 @@ iframe {
 }
 
 .spacer {
-  height: 50px;
+  height: 28px;
 }
 
 
