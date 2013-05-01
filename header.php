@@ -25,15 +25,16 @@
     ?>
       <title><?=bloginfo('name');?></title>
       <meta property="og:title" content="<?=bloginfo('name')?>" />
-      <meta name='description' property="og:description" content="Programmering är mitt jobb och passion. Jag frilansar, arbetar i Vim och är ständigt på jakt efter spännande uppdrag." />
+      <meta name='description' property="og:description" content="This blog is using Blogify, a wordpress theme made by John Dahlström." />
     <?php
     }
     ?>
     <meta property="og:type" content="blog" />
     <meta property="og:url" content="<?php echo $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]; ?>" />
     <meta property="og:image" content="http://johndahlstrom.se/blog/wp-content/uploads/2013/01/profil.jpg" />
-    <meta name="keywords" content="john dahlström, frilans, webbprogrammerare, responsive design, arch linux, archlinux, linux arch, mobile first, vim, vim a, vim i, blogg hur man gör" />
+    <meta name="keywords" content="john dahlström, blogify, wordpress theme" />
     <meta name='author' content='John Dahlström' />
+
 
     <style type="text/css" media="all">
       body {
