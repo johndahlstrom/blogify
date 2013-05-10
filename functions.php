@@ -7,7 +7,6 @@ if ( function_exists('register_sidebar') )
     'after_title' => '</h2>',
   ));
 
-// används för att ta bort nofollow i en länk
 function remove_nofollow($link) {
 	return str_replace(' nofollow', '', $link);
 }
@@ -19,22 +18,23 @@ function add_nofollow($link) {
 }
 
 function add_meta_nofollow($link) {
-	echo "...";
 	$link = preg_replace( '/(.+)/', '$1" rel="nofollow', $link );
 	return $link;
 }
 
-//remove_filter('pre_comment_content', 'wp_rel_nofollow'); // hindra wordpress från att lägga till nofollow på länkar.
-add_filter('get_comment_author_link', 'remove_nofollow'); // ta bort nofollow från author länkar.
-add_filter('edit_comment_link', 'add_nofollow'); // lägg till nofollow på redigera comment
-add_filter('comment_reply_link', 'add_nofollow' ); // lägg till nofollow på comment reply
+remove_filter('pre_comment_content', 'wp_rel_nofollow');
+add_filter('get_comment_author_link', 'remove_nofollow'); 
+add_filter('edit_comment_link', 'add_nofollow');
+add_filter('comment_reply_link', 'add_nofollow' );
 add_filter('get_comment_class', 'add_meta_nofollow');
 
+// Clean up our header
 remove_action( 'wp_head', 'wlwmanifest_link' );
 remove_action( 'wp_head', 'wp_generator' );
 remove_action( 'wp_head', 'rsd_link' ); 
 
-add_action('admin_menu', 'themeoptions_admin_menu'); //action to display the menu
+//action to display the menu
+add_action('admin_menu', 'themeoptions_admin_menu'); 
 function themeoptions_admin_menu() {
   add_theme_page('Theme colors', 'Theme colors', 'read', 'color_picker_option', 'color_picker_option_page');
 }
@@ -47,7 +47,6 @@ function load_theme_scripts() {
 }
 
 function color_picker_option_page() {
-  /*This should normally go into a seperate function to provide default values for when the theme is just activated*/
   $titles = get_option('titles');
   if (empty($titles) || $titles == '') {
     add_option('titles', '#13A7EC');
