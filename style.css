@@ -128,11 +128,19 @@ a:hover, a:focus {
   margin: 0 0 2em 0;
 }
 
-.widget_text {
+.widget {
   padding: 0 20px 20px 20px;
   float: left;
   list-style: none;
   text-shadow: 1px 1px #fff;
+}
+
+.widget li {
+  list-style: none;
+}
+
+.widget a {
+  text-shadow: none;
 }
 
 #sidebar img {
@@ -171,7 +179,7 @@ blockquote p {
 }
 
 .entry-title a {
-  color: #fff;
+  color: #fff !important;
 }
 
 .entry-title a:hover {

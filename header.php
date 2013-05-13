@@ -40,7 +40,7 @@
       body {
         color: <?php echo get_option('text') ?>;
       }
-      a { 
+      a, a:visited { 
         color: <?php echo get_option('links') ?>;
       }
       a:hover {
